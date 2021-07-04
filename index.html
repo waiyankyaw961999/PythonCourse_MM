@@ -44,10 +44,14 @@
                     <li class="nav-item">
                         <a href="#instructors" class="nav-link">Instructors</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- End of Navbar-->
 
     <!-- Showcase-->
     <section class="text-light p-5 text-center text-sm-start p-lg-0 pt-lg-5" style="background-color:#301f26;">
@@ -60,8 +64,9 @@
                         We offer free and curated courses for you to become familiar with programming, especially with
                         Python.
                     </p>
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start the
-                        Enrollment</button>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Start the Enrollment
+                    </button>
 
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block" src="./images/programmer.png" style="height:400px;"></img>
@@ -74,12 +79,12 @@
 
     <section class="bg-primary text-light p-5">
         <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
+            <div class="d-md-flex justify-content-between">
                 <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
 
                 <div class="input-group news-input">
 
-                    <input type="text" class="form-control" placeholder="Enter Email"></input>
+                    <input type="email" class="form-control" placeholder="Enter Email"></input>
                     <button type="button" class="btn btn-lg btn-dark">Subscribe</button>
 
                 </div>
@@ -171,7 +176,6 @@
     <section id="learn" class="p-5 bg-dark text-light">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-
                 <div class="col-md p-5">
                     <h2>Learn Python</h2>
                     <p class="lead">
@@ -338,8 +342,7 @@
     </section> <!-- End of Instructors-->
 
     <!--Contact & Map-->
-
-    <section class="p-5">
+    <section class="p-5" id="contact">
         <div class="container">
             <div class="row g-4">
                 <div class="col-md">
@@ -356,21 +359,21 @@
                     </ul>
                 </div>
                 <div class="col-md">
-                    <div id='map'>
-                    </div>
+                    <div id='map'></div>
                 </div>
             </div>
-    </section> <!-- End of Contact info-->
+    </section> 
+    <!-- End of Contact info-->
 
     
 
     <!-- Modal -->
-    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="enroll" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel">Fill out form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     <p class="lead">Fill out this form and we will get back to you.</p>
@@ -380,14 +383,13 @@
                                 First Name:
                             </label>
                             <input type="text" class="form-control" id="first-name">
-
                         </div>
+                        
                         <div class="mb-3">
                             <label for="last-name" class="col-form-label">
                                 Second Name:
                             </label>
                             <input type="text" class="form-control" id="last-name">
-                            
                         </div>
                         <div class="mb-3">
                             <label for="Email" class="col-form-label">
